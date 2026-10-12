@@ -1,9 +1,15 @@
 # MONAN-IA preproc (v3)
 
+> **Rebuilding the dataset on another machine?** Follow `docs/BUILD_V3_DATASET.md`
+> (frozen normalization stats in `reference/`, driver `scripts/run_local_pipeline.sh`,
+> checks in `scripts/verify_reference.py`). Corrections to the text below: output
+> ordering is **RING** (not NESTED; only the 256→64 degrade uses nested parent/children
+> relations) and the final dataset has **235** variables.
+
 Preprocessing-only project for the MONAN-IA v3 dataset.
 
 Converts raw ERA5 NetCDF files on the regular 1° lat-lon grid into HEALPix
-`nside=64` (NESTED ordering) NetCDF files — one per month, **236 variables**,
+`nside=64` (**RING** ordering) NetCDF files — one per month, **235 variables**,
 ready for downstream normalization, climatology, and training.
 
 ## What this does

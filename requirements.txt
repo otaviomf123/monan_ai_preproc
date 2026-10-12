@@ -1,0 +1,7 @@
+# Versions used on ncempa (conda env `flash`, Python 3.10.19) to build v3.
+numpy>=2.2,<2.3
+xarray>=2025.6
+netCDF4>=1.7.4
+healpy>=1.19
+scikit-learn>=1.7
+pandas>=2.3
